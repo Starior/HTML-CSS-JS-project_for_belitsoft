@@ -57,3 +57,64 @@ function openContentPrice() {
     btnClose.className = "arrow-rollup hide";
   }
 }
+
+function openContentTeam() {
+  var x = document.getElementById("team-content");
+  var btnOpen = document.getElementById("btnOpenTeam");
+  var btnClose = document.getElementById("btnCloseTeam");
+  if (x.className === "content-block__content") {
+    x.className += " unhide";
+    btnOpen.className = "arrow-expand hide";
+    btnClose.className = "arrow-rollup unhide";
+  } else {
+    x.className = "content-block__content";
+    btnOpen.className = "arrow-expand unhide";
+    btnClose.className = "arrow-rollup hide";
+  }
+}
+
+function openContentBlog() {
+  var x = document.getElementById("blog-content");
+  var btnOpen = document.getElementById("btnOpenBlog");
+  var btnClose = document.getElementById("btnCloseBlog");
+  if (x.className === "content-block__content") {
+    x.className += " unhide";
+    btnOpen.className = "arrow-expand hide";
+    btnClose.className = "arrow-rollup unhide";
+  } else {
+    x.className = "content-block__content";
+    btnOpen.className = "arrow-expand unhide";
+    btnClose.className = "arrow-rollup hide";
+  }
+}
+
+function openContentContact() {
+  var x = document.getElementById("contact-content");
+  var btnOpen = document.getElementById("btnOpenContact");
+  var btnClose = document.getElementById("btnCloseContact");
+  if (x.className === "content-block__content") {
+    x.className += " unhide";
+    btnOpen.className = "arrow-expand hide";
+    btnClose.className = "arrow-rollup unhide";
+  } else {
+    x.className = "content-block__content";
+    btnOpen.className = "arrow-expand unhide";
+    btnClose.className = "arrow-rollup hide";
+  }
+}
+
+
+function openContentPriceFree() {
+  var x = document.getElementById("contact-content");
+  var btnOpen = document.getElementById("btnOpenContact");
+  var btnClose = document.getElementById("btnCloseContact");
+  if (x.className === "content-block__content") {
+    x.className += " unhide";
+    btnOpen.className = "arrow-expand hide";
+    btnClose.className = "arrow-rollup unhide";
+  } else {
+    x.className = "content-block__content";
+    btnOpen.className = "arrow-expand unhide";
+    btnClose.className = "arrow-rollup hide";
+  }
+}

@@ -160,12 +160,20 @@
       <div class="price__blocks">
         <div class="price__block">
           <div class="top-group">
-            <h4 class="top-group-title">Free Trail</h4>
-            <div class="top-group-price">
-              <p class="currency">$</p>
-              <p class="value">00</p>
-              <p class="period">per month</p>
+            <div class="top-group-in">
+              <h4 class="top-group-title">Free Trail</h4>
+              <div class="top-group-price">
+                <div class="price-numbers">
+                  <p class="currency">$</p>
+                  <p class="value">00</p>
+                </div>
+                <p class="period">per month</p>
+              </div>
             </div>
+            <a href="javascript:void(0);" class="content-block__arrow price-arrow" id="arrowAboutUs" onclick="openContentPrice()">
+              <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenPrice">
+              <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnClosePrice">
+            </a>
           </div>
           <div class="bottom-group">
             <ul class="bottom-list">
@@ -179,12 +187,20 @@
         </div>
         <div class="price__block">
           <div class="top-group">
-            <h4 class="top-group-title">Basic</h4>
-            <div class="top-group-price">
-              <p class="currency">$</p>
-              <p class="value">50</p>
-              <p class="period">per month</p>
+            <div class="top-group-in">
+              <h4 class="top-group-title">Basic</h4>
+              <div class="top-group-price">
+                <div class="price-numbers">
+                  <p class="currency">$</p>
+                  <p class="value">50</p>
+                </div>
+                <p class="period">per month</p>
+              </div>
             </div>
+            <a href="javascript:void(0);" class="content-block__arrow price-arrow" id="arrowAboutUs" onclick="openContentPrice()">
+              <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenPrice">
+              <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnClosePrice">
+            </a>
           </div>
           <div class="bottom-group">
             <ul class="bottom-list">
@@ -198,12 +214,20 @@
         </div>
         <div class="price__block">
           <div class="top-group">
-            <h4 class="top-group-title">Ultimates</h4>
-            <div class="top-group-price">
-              <p class="currency">$</p>
-              <p class="value">99</p>
-              <p class="period">per month</p>
+            <div class="top-group-in">
+              <h4 class="top-group-title">Ultimates</h4>
+              <div class="top-group-price">
+                <div class="price-numbers">
+                  <p class="currency">$</p>
+                  <p class="value">99</p>
+                </div>
+                <p class="period">per month</p>
+              </div>
             </div>
+            <a href="javascript:void(0);" class="content-block__arrow price-arrow" id="arrowAboutUs" onclick="openContentPrice()">
+              <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenPrice">
+              <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnClosePrice">
+            </a>
           </div>
           <div class="bottom-group">
             <ul class="bottom-list">
@@ -224,11 +248,11 @@
   <div class="team__container content-block">
     <h2 class="content-block__title">Our Team Member</h2>
     <p class="content-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-    <a href="javascript:void(0);" class="content-block__arrow" id="arrowAboutUs" onclick="openMenuTeam()">
-      <img class="arrow-expand arrowTrue" src="img/arrow-expand.png" alt="menu-button" id="btnOpenAboutUs">
-      <img class="arrow-rollup" src="img/arrow-rollup.png" alt="menu-button" id="btnCloseAboutUs">
+    <a href="javascript:void(0);" class="content-block__arrow" id="arrowAboutUs" onclick="openContentTeam()">
+      <img class="arrow-expand arrowTrue" src="img/arrow-expand.png" alt="menu-button" id="btnOpenTeam">
+      <img class="arrow-rollup" src="img/arrow-rollup.png" alt="menu-button" id="btnCloseTeam">
     </a>
-    <div class="content-block__content">
+    <div class="content-block__content" id="team-content">
       <div class="team__blocks">
         <div class="team__block">
           <img src="img/man-1.png" alt="" class="team__image">
@@ -301,11 +325,11 @@
   <div class="blog__container content-block">
     <h2 class="content-block__title">Blog</h2>
     <p class="content-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-    <a href="javascript:void(0);" class="content-block__arrow" id="arrowAboutUs" onclick="openMenuBlog()">
-      <img class="arrow-expand arrowTrue" src="img/arrow-expand.png" alt="menu-button" id="btnOpenAboutUs">
-      <img class="arrow-rollup" src="img/arrow-rollup.png" alt="menu-button" id="btnCloseAboutUs">
+    <a href="javascript:void(0);" class="content-block__arrow" id="arrowAboutUs" onclick="openContentBlog()">
+      <img class="arrow-expand arrowTrue" src="img/arrow-expand.png" alt="menu-button" id="btnOpenBlog">
+      <img class="arrow-rollup" src="img/arrow-rollup.png" alt="menu-button" id="btnCloseBlog">
     </a>
-    <div class="content-block__content">
+    <div class="content-block__content" id="blog-content">
       <div class="blog__blocks">
         <div class="blog__block">
           <img src="img/image-1.png" alt="" class="blog__image">
@@ -353,18 +377,18 @@
           </div>
         </div>
       </div>
-      <input class="blog__button" type="button" value="More VIEW"></div>
-
+      <input class="blog__button" type="button" value="More VIEW">
+    </div>
   </div>
 </div><div class="contact">
   <div class="contact__container content-block">
     <h2 class="content-block__title">Contact Us</h2>
     <p class="content-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-    <a href="javascript:void(0);" class="content-block__arrow" id="arrowAboutUs" onclick="openMenuContact()">
-      <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenAboutUs">
-      <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnCloseAboutUs">
+    <a href="javascript:void(0);" class="content-block__arrow" id="arrowAboutUs" onclick="openContentContact()">
+      <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenContact">
+      <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnCloseContact">
     </a>
-    <div class="content-block__content">
+    <div class="content-block__content" id="contact-content">
       <div class="contact__group">
         <a href="" class="contact__adress contact__group-item">
           <div class="contact__icon">
