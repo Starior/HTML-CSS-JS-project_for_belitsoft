@@ -12,11 +12,11 @@
 <body>
 <div class="site-wrapper">
 
-<header class="header">
+<header class="header" id="masthead">
   <div class="header__container">
     <div class="header__logo">
-      <a class="header__logo-img" href="index.html">
-        <img src="img/logo.png" alt="logo-img">
+      <a class="header__logo-img" id="masthead" href="index.html">
+        <img src="img/logo.png" id="header-logo" alt="logo-img">
       </a>
       <h3 class="header__title">Web Development Project
       </h3>
@@ -45,8 +45,8 @@
     <h2 class="slide__title">Web development project</h2>
     <p class="slide__text">Very suitable to support all web development projects</p>
     <div class="slide__buttons">
-      <input class="slide__button slide__services-button" type="button" value="OUR SERVICES">
-      <input class="slide__button slide__hire-button" type="button" value="HIRE IS NOW">
+      <input class="slide__button slide__services-button" id="services-button" type="button" value="OUR SERVICES">
+      <input class="slide__button slide__hire-button" id="hire-button" type="button" value="HIRE IS NOW">
     </div>
     <a href="" class="slider__arrow">
       <img src="img/arrow.png" alt="">
@@ -90,7 +90,7 @@
       <img class="arrow-rollup" src="img/arrow-rollup.png" alt="menu-button" id="btnCloseServices">
     </a>
     <div class="content-block__content" id="services-content">
-      <div class="services__blocks">
+      <div class="services__blocks" id="services__blocks">
         <div class="services__block">
           <div class="services__block-top">
             <img class="services__block-img" src="img/smartphone-black.png" alt="">
@@ -144,8 +144,35 @@
 
           <input class="services__block-button" type="button" value="READ MORE">
         </div>
+        <div class="services__block">
+          <div class="services__block-top">
+            <img class="services__block-img" src="img/smartphone-black.png" alt="">
+            <h4 class="services__block-title">Something</h4>
+            <p class="services__block-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+          </div>
+
+          <input class="services__block-button" type="button" value="READ MORE">
+        </div>
+        <div class="services__block">
+          <div class="services__block-top">
+            <img class="services__block-img" src="img/smartphone-black.png" alt="">
+            <h4 class="services__block-title">Something</h4>
+            <p class="services__block-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+          </div>
+
+          <input class="services__block-button" type="button" value="READ MORE">
+        </div>
+        <div class="services__block">
+          <div class="services__block-top">
+            <img class="services__block-img" src="img/smartphone-black.png" alt="">
+            <h4 class="services__block-title">Something</h4>
+            <p class="services__block-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+          </div>
+
+          <input class="services__block-button" type="button" value="READ MORE">
+        </div>
       </div>
-      <input class="services__button" type="button" value="VIEW ALL">
+      <input class="services__button" id="services__button" type="button" value="VIEW ALL" onclick="expandServices()">
     </div>
   </div>
 </div><div class="price">
@@ -170,12 +197,12 @@
                 <p class="period">per month</p>
               </div>
             </div>
-            <a href="javascript:void(0);" class="content-block__arrow price-arrow" id="arrowAboutUs" onclick="openContentPrice()">
-              <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenPrice">
-              <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnClosePrice">
+            <a href="javascript:void(0);" class="content-block__arrow price-arrow" id="arrowAboutUs" onclick="openPriceFree()">
+              <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenPriceFree">
+              <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnClosePriceFree">
             </a>
           </div>
-          <div class="bottom-group">
+          <div class="bottom-group" id="benifitsPriceFree">
             <ul class="bottom-list">
               <li class="bottom-list-item">30 Free Trail</li>
               <li class="bottom-list-item">5 Free Projects</li>
@@ -197,12 +224,12 @@
                 <p class="period">per month</p>
               </div>
             </div>
-            <a href="javascript:void(0);" class="content-block__arrow price-arrow" id="arrowAboutUs" onclick="openContentPrice()">
-              <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenPrice">
-              <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnClosePrice">
+            <a href="javascript:void(0);" class="content-block__arrow price-arrow" id="arrowAboutUs" onclick="openPriceBasic()">
+              <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenPriceBasic">
+              <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnClosePriceBasic">
             </a>
           </div>
-          <div class="bottom-group">
+          <div class="bottom-group" id="benifitsPriceBasic">
             <ul class="bottom-list">
               <li class="bottom-list-item">30 Free Trail</li>
               <li class="bottom-list-item">5 Free Projects</li>
@@ -224,12 +251,12 @@
                 <p class="period">per month</p>
               </div>
             </div>
-            <a href="javascript:void(0);" class="content-block__arrow price-arrow" id="arrowAboutUs" onclick="openContentPrice()">
-              <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenPrice">
-              <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnClosePrice">
+            <a href="javascript:void(0);" class="content-block__arrow price-arrow" id="arrowAboutUs" onclick="openPriceUltimates()">
+              <img class="arrow-expand arrowTrue" src="img/arrow-expand-white.png" alt="menu-button" id="btnOpenPriceUltimates">
+              <img class="arrow-rollup" src="img/arrow-rollup-white.png" alt="menu-button" id="btnClosePriceUltimates">
             </a>
           </div>
-          <div class="bottom-group">
+          <div class="bottom-group" id="benifitsPriceUltimates">
             <ul class="bottom-list">
               <li class="bottom-list-item">30 Free Trail</li>
               <li class="bottom-list-item">5 Free Projects</li>
@@ -313,7 +340,6 @@
         </div>
       </div>
       <div class="team__sliders">
-
         <input class="team__slider-button" type="button" value="">
         <input class="team__slider-button" type="button" value="">
         <input class="team__slider-button" type="button" value="">
@@ -338,10 +364,14 @@
               <h3>SEO Quis Vestibulum</h3>
             </a>
             <div class="blog__block-info">
-              <img src="img/calendar-icon.png" alt="" class="date-image">
-              <p class="date">14.07.2017</p>
-              <img src="img/doc-icon.png" alt="" class="theme-image">
-              <p class="theme">Development</p>
+              <div class="date">
+                <img src="img/calendar-icon.png" alt="" class="date-image">
+                <p class="date-text">14.07.2017</p>
+              </div>
+              <div class="theme">
+                <img src="img/doc-icon.png" alt="" class="theme-image">
+                <p class="theme-text">Development</p>
+              </div>
             </div>
             <p class="blog__block-text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
           </div>
@@ -353,10 +383,14 @@
               <h3>SEO Quis Vestibulum</h3>
             </a>
             <div class="blog__block-info">
-              <img src="img/calendar-icon.png" alt="" class="date-image">
-              <p class="date">14.07.2017</p>
-              <img src="img/doc-icon.png" alt="" class="theme-image">
-              <p class="theme">Development</p>
+              <div class="date">
+                <img src="img/calendar-icon.png" alt="" class="date-image">
+                <p class="date-text">14.07.2017</p>
+              </div>
+              <div class="theme">
+                <img src="img/doc-icon.png" alt="" class="theme-image">
+                <p class="theme-text">Development</p>
+              </div>
             </div>
             <p class="blog__block-text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
           </div>
@@ -368,10 +402,14 @@
               <h3>SEO Quis Vestibulum</h3>
             </a>
             <div class="blog__block-info">
-              <img src="img/calendar-icon.png" alt="" class="date-image">
-              <p class="date">14.07.2017</p>
-              <img src="img/doc-icon.png" alt="" class="theme-image">
-              <p class="theme">Development</p>
+              <div class="date">
+                <img src="img/calendar-icon.png" alt="" class="date-image">
+                <p class="date-text">14.07.2017</p>
+              </div>
+              <div class="theme">
+                <img src="img/doc-icon.png" alt="" class="theme-image">
+                <p class="theme-text">Development</p>
+              </div>
             </div>
             <p class="blog__block-text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
           </div>
@@ -390,37 +428,37 @@
     </a>
     <div class="content-block__content" id="contact-content">
       <div class="contact__group">
-        <a href="" class="contact__adress contact__group-item">
+        <div href="" class="contact__adress contact__group-item">
           <div class="contact__icon">
             <img class="contact__adress-icon" src="img/adress-icon.png" alt="">
           </div>
           <p class="contact__adress-text">Nobinagar savar, Dhaka Bangladesh
           </p>
-        </a>
-        <a href="" class="contact__phone contact__group-item">
+        </div>
+        <div href="" class="contact__phone contact__group-item">
           <div class="contact__icon">
             <img class="contact__phone-icon" src="img/phone-icon.png" alt="">
           </div>
           <p class="contact__phone-text">+8801743331996 +8801928737807
           </p>
-        </a>
-        <a href="" class="contact__email contact__group-item">
+        </div>
+        <div href="" class="contact__email contact__group-item">
           <div class="contact__icon">
             <img class="contact__email-icon" src="img/email-icon.png" alt="">
           </div>
           <p class="contact__email-text">quickmasud@gmail.com quickmasud@yahoo.com
           </p>
-        </a>
+        </div>
       </div>
       <form action="" class="contact__form">
         <div class="contact__forms">
           <div class="contact__form-left">
-            <input class="contact__form-input" type="text" placeholder="YOUR NAME" />
-            <input class="contact__form-input" type="email" placeholder="YOUR Email" />
-            <input class="contact__form-input" type="tel" placeholder="Your Phone" />
+            <input class="contact__form-input" type="text" placeholder="YOUR NAME" required/>
+            <input class="contact__form-input" type="email" placeholder="YOUR Email" required/>
+            <input class="contact__form-input" type="tel" placeholder="Your Phone" required/>
           </div>
           <div class="contact__form-right">
-            <textarea class="contact__form-input contact__text-area" type="text" placeholder="Write Message"></textarea>
+            <textarea class="contact__form-input contact__text-area" type="text" placeholder="Write Message" required></textarea>
           </div>
         </div>
         <input class="contact__form-button" type="button" value="SEND">
