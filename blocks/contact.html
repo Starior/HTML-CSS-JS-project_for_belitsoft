@@ -33,15 +33,15 @@
       <form action="" class="contact__form">
         <div class="contact__forms">
           <div class="contact__form-left">
-            <input class="contact__form-input" type="text" placeholder="YOUR NAME" required/>
-            <input class="contact__form-input" type="email" placeholder="YOUR Email" required/>
-            <input class="contact__form-input" type="tel" placeholder="Your Phone" required/>
+            <input class="contact__form-input" type="text" placeholder="YOUR NAME" required id="name" />
+            <input class="contact__form-input" type="email" placeholder="YOUR Email" required id="email" />
+            <input class="contact__form-input" type="tel" placeholder="Your Phone" required id="phone" />
           </div>
           <div class="contact__form-right">
-            <textarea class="contact__form-input contact__text-area" type="text" placeholder="Write Message" required></textarea>
+            <textarea class="contact__form-input contact__text-area" type="text" placeholder="Write Message" required id="text"></textarea>
           </div>
         </div>
-        <input class="contact__form-button" type="button" value="SEND">
+        <input class="contact__form-button" type="submit" value="SEND" onmouseover="contactMouseOverBtn(this)">
       </form>
     </div>
 

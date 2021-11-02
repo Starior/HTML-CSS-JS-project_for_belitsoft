@@ -277,7 +277,6 @@ h6 {
 
 .site-wrapper {
   width: 100%;
-  min-width: 100%;
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -870,7 +869,6 @@ h6 {
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
-  /* identical to box height, or 110% */
   letter-spacing: 0.1em;
   color: #000000;
 }
@@ -880,7 +878,6 @@ h6 {
   font-weight: normal;
   font-size: 15px;
   line-height: 22px;
-  /* or 147% */
   text-align: center;
   letter-spacing: 0.1em;
   color: #000000;
@@ -1081,7 +1078,6 @@ h6 {
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
-  /* identical to box height, or 110% */
   text-align: center;
   letter-spacing: 0.1em;
   color: #000000;
@@ -1097,7 +1093,6 @@ h6 {
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
-  /* or 167% */
   text-align: center;
   letter-spacing: 0.1em;
   color: #000000;
@@ -1136,7 +1131,6 @@ h6 {
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
-  /* identical to box height, or 110% */
   text-align: center;
   letter-spacing: 0.1em;
   color: #000000;
@@ -1212,7 +1206,6 @@ h6 {
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
-  /* identical to box height, or 110% */
   text-align: center;
   letter-spacing: 0.1em;
   background-color: transparent;
@@ -1528,7 +1521,6 @@ h6 {
   font-weight: 300;
   font-size: 17px;
   line-height: 17px;
-  /* or 412% */
   text-align: center;
   letter-spacing: 0.1em;
   color: #000000;
@@ -1580,7 +1572,6 @@ h6 {
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
-  /* identical to box height, or 110% */
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1608,11 +1599,11 @@ h6 {
   background: #FFFFFF;
 }
 .team .team__container {
-  width: 85.625%;
+  width: 90%;
 }
 @media (max-width: 1200px) {
   .team .team__container {
-    width: 90%;
+    width: 95%;
   }
 }
 @media (max-width: 1200px) and (max-width: 1100px) {
@@ -1625,10 +1616,10 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 115px;
+}
+.team .team__container .team__blocks > * {
+  margin: auto;
 }
 .team .team__container .team__blocks > * {
   display: none;
@@ -1695,7 +1686,6 @@ h6 {
   font-weight: 600;
   font-size: 24px;
   line-height: 22px;
-  /* identical to box height, or 92% */
   text-align: center;
   letter-spacing: 0.1em;
   color: #000000;
@@ -2073,7 +2063,6 @@ h6 {
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
-  /* identical to box height, or 110% */
   text-align: center;
   letter-spacing: 0.1em;
   background-color: transparent;
@@ -2161,12 +2150,27 @@ h6 {
   background: #3949AB;
   border-radius: 110px;
 }
+@media (max-width: 500px) {
+  .contact .contact__container .contact__group .contact__group-item .contact__icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+  }
+  .contact .contact__container .contact__group .contact__group-item .contact__icon .contact__adress-icon {
+    max-width: 28px;
+  }
+  .contact .contact__container .contact__group .contact__group-item .contact__icon .contact__phone-icon {
+    max-width: 39.45px;
+  }
+  .contact .contact__container .contact__group .contact__group-item .contact__icon .contact__email-icon {
+    max-width: 28px;
+  }
+}
 .contact .contact__container .contact__group .contact__group-item p {
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
   line-height: 30px;
-  /* or 136% */
   text-align: center;
   letter-spacing: 0.1em;
   color: #FFFFFF;
@@ -2291,7 +2295,7 @@ h6 {
     padding: 16px 15px;
   }
 }
-.contact .contact__container .contact__form .contact__form-button:hover {
+.contact .contact__container .contact__form .contact__form-button-active:active, .contact .contact__container .contact__form .contact__form-button-active:focus {
   background: #00897B;
 }
 

@@ -232,6 +232,8 @@ function expandBlog() {
   }, 2500);
 }
 
+
+//https://developer.mozilla.org/ru/docs/Web/API/Window/resize_event
 (function() {
   var throttle = function(type, name, obj) {
     obj = obj || window;
@@ -347,62 +349,59 @@ function nextPage(element) {
 
 
 }
-// let teamBlocks = document.getElementsByClassName("team__block");
-// console.log(teamBlocks.length);
-// console.log(Math.ceil(teamBlocks.length / 3));
-
-// let sliders = document.querySelectorAll('.team__slider-button:not(.hide)');
-// console.log(sliders);
-
-
-
 
 
 window.onload = function() {
-
   // console.log("Page loaded");
-
   let teamBlocks = document.getElementsByClassName("team__block");
   let sliders = document.querySelectorAll('.team__slider-button');
   sliders[0].autofocus = true;
+
   if (window.matchMedia("(min-width: 1000px)").matches) {
     // console.log("больше 1000");
-
     for (var i = 0; i < sliders.length; i++) {
       if (i < Math.ceil(teamBlocks.length / 3)) {
         sliders[i].className = "team__slider-button unhide";
       } else {
         sliders[i].className = "team__slider-button";
       }
-
     }
   }
+
   if (window.matchMedia("(min-width: 700px) and (max-width: 999px)").matches) {
     // console.log("от 700 до 999");
-
     for (var i = 0; i < sliders.length; i++) {
       if (i < Math.ceil(teamBlocks.length / 2)) {
         sliders[i].className = "team__slider-button unhide";
       } else {
         sliders[i].className = "team__slider-button";
       }
-
     }
   }
+
   if (window.matchMedia("(max-width: 699px)").matches) {
     // console.log("меньше 699");
-
     for (var i = 0; i < sliders.length; i++) {
       if (i < Math.ceil(teamBlocks.length / 1)) {
         sliders[i].className = "team__slider-button unhide";
       } else {
         sliders[i].className = "team__slider-button";
       }
-
     }
   }
-
-
-
-
 };
+
+function contactMouseOverBtn(data) {
+  let name = document.getElementById("name");
+  let email = document.getElementById("email");
+  let phone = document.getElementById("phone");
+  let text = document.getElementById("text");
+
+  //small plug
+  if (name.value != "" && email.value != "" && phone.value != "" && text.value != "" && email.value.includes("@")) {
+    console.log("true");
+    data.className = "contact__form-button contact__form-button-active";
+  } else {
+    data.className = "contact__form-button";
+  }
+}
