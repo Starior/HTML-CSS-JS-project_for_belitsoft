@@ -201,7 +201,7 @@ function expandServices() {
   }
   setTimeout(function() {
     servicesBtn.className = "services__button";
-  }, 2500);
+  }, 200);
 }
 
 var priceBtns = document.getElementsByClassName("price__block-button");
@@ -229,7 +229,7 @@ function expandBlog() {
   }
   setTimeout(function() {
     blogBtn.className = "blog__button";
-  }, 2500);
+  }, 200);
 }
 
 

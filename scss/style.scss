@@ -1047,7 +1047,7 @@ body {
   background: #FFFFFF;
   .team__container {
     // width: 85.625%;
-    width: 90%;
+    width: 91.9%;
     @media (max-width: 1200px) {
       // width: 90%;
       width: 95%;
@@ -1072,7 +1072,9 @@ body {
         display: flex;
       }
       @media (max-width: 999px) {
-        justify-content: space-around;
+        // justify-content: space-around;
+        padding-left: 70px;
+        padding-right: 70px;
         margin-bottom: 50px;
         &>*:nth-child(-n+3) {
           display: none;
@@ -1092,20 +1094,23 @@ body {
             display: flex;
           }
         }
+        @media (max-width: 820px) {
+          padding-left: 0;
+          padding-right: 0;
+        }
       }
       .team__block {
         width: (390/1370*100%);
         min-width: 320px;
+        max-width: 390px;
         // declared in parent due to adding hiding elements
         // display: flex;
+        // not working whith hidden elements
         // &:only-child {
         //   margin: 0 auto;
         // }
         flex-direction: column;
         align-items: center;
-        // &:first-child:last-child {
-        //   margin: 0 auto;
-        // }
         .team__image {
           width: 100%;
           min-width: 320px;
@@ -1226,17 +1231,26 @@ body {
       .blog__block {
         // declared in parent due to adding hiding elements
         // display: flex;
-        align-items: center;
+        // align-items: center;
+        // align-items: flex-start;
         @media (max-width: 550px) {
-          justify-content: center;
+          padding-left: 60px;
+          @media (max-width: 500px) {
+            padding-left: 30px;
+            @media (max-width: 400px) {
+              padding-left: 0;
+            }
+          }
         }
         .blog__image {
           width: 50%;
           @media (max-width: 700px) {
-            max-width: 30%;
+            width: 30%;
             @media (max-width: 600px) {
-              max-width: 20%;
-              min-width: 100px;
+              align-self: center;
+              @media (max-width: 500px) {
+                min-width: 100px;
+              }
             }
           }
         }
@@ -1256,7 +1270,6 @@ body {
                 padding-left: 10px;
                 padding-right: 10px;
                 @media (max-width: 700px) {
-                  // width: 70%;
                   padding-top: 0;
                   padding-left: 8px;
                   padding-right: 10px;
