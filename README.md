@@ -1,6 +1,6 @@
 # HTML-CSS-JS-project for belitsoft
 
-[GitHub Pages](https://starior.github.io/belitsoft_project-HTML-CSS-JS/)
+[GitHub Pages](https://starior.github.io/HTML-CSS-JS-project_for_belitsoft/)
 
 ТЗ (техническое задание) по верстке: 
 - Адаптивная верстка
