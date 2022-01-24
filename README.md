@@ -19,4 +19,4 @@
 - При нажатии кнопки view all должны показываться все карточки.
 - Также должны быть показаны все элементы (вся информация) при нажатии на галочку (мини view all).
 
-https://www.figma.com/file/k8WLHJBkbZatuCgHXnPY5j/Student-Project
+[Layout](https://www.figma.com/file/k8WLHJBkbZatuCgHXnPY5j/Student-Project)
